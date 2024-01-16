@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="noindex">
-    <title>Keiyoushi</title>
-    <meta name="description" content="A repository of unofficial Tachiyomi extensions.">
-    <meta property="og:title" content="Keiyoushi">
-    <meta property="og:description" content="A repository of unofficial Tachiyomi extensions.">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/113362897?v=4">
-    <meta property="og:url" content="https://keiyoushi.github.io/extensions/">
+    <title>RespectFace</title>
+    <meta name="description" content="A no-updates repository of pre-purge Tachiyomi extensions signed by Javier Tomás.">
+    <meta property="og:title" content="RespectFace">
+    <meta property="og:description" content="A no-updates repository of pre-purge Tachiyomi extensions signed by Javier Tomás.">
+    <meta property="og:image" content="https://codeberg.org/avatars/1a39aaa253f56f98f6390a189ea22d9c842668e006104c903266a16d8b2969b9?size=512">
+    <meta property="og:url" content="https://respectface.github.io/tachi-prepurge-extensions/">
     <meta name="theme-color" content="#2e84bf">
     <link
         rel="stylesheet"
         media="(prefers-color-scheme:light)"
-        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/themes/light.css"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css"
         integrity="sha384-0usmJJJTG5wZwRFlxdECle5gNAqtRYVm8rHBHjGO0+Cpgp83KTGEANVIFUYafjaO"
         crossorigin="anonymous"
     />
     <link
         rel="stylesheet"
         media="(prefers-color-scheme:dark)"
-        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/themes/dark.css"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/dark.css"
         onload="document.documentElement.classList.add('sl-theme-dark');"
         integrity="sha384-2HpI1Tt4Zv7emgrwKyetd6ouDie+RKolEtNHOdD+KCVHLj1V2fjxryG48h50f0Rw"
         crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css">
-    <script async type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/components/button/button.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/button/button.js"></script>
     <script data-goatcounter="https://keiyoushi.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
     <header class="header">
-        <p class="header__title">Keiyoushi</p>
+        <p class="header__title">RespectFace</p>
     </header>
     <div class="description">
-        Join the <a class="description__anchor" href="https://discord.gg/3FbCpdKbdY" onclick="window.goatcounter?.count({ path: location.pathname + '#discord' })">Discord server</a> for support. Make sure to star <a class="description__anchor" href="https://github.com/keiyoushi/extensions">the GitHub repo</a>.
+        A <strong>no-updates</strong> repository of pre-purge Tachiyomi extensions that were signed by Javier Tomás <i>(developer of Tachiyomi).</i> Make sure to star <a class="description__anchor" href="https://github.com/respectface/tachi-prepurge-extensions">the Codeberg repo</a>.
     </div>
 
     <h2 class="header">Guide</h2>
@@ -56,27 +56,20 @@
         <sl-button 
             style="display: flex; justify-content: center;"
             variant="primary"
-            href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json"
-            onclick="window.goatcounter?.count({ path: location.pathname + '#add-to-tachiyomi' })">
+            href="tachiyomi://add-repo?url=https://raw.githubusercontent.com/respectface/extensions/repo/index.min.json">
             Add to Mihon/Tachiyomi
         </sl-button>
     </div>
 
     <div>
-        <p>TachiyomiAZ:</p>
-
-        <ol>
-            <li>Go to Settings → Browse</li>
-            <li>Tap on "Edit repos" and then "Add" button at bottom</li>
-            <li>Input <code>keiyoushi/extensions</code></li>
-            <li>Enjoy!</li>
-        </ol>
-    </div>
-
-    <div>
         <p>If you're not using any of the above, download and update extensions from <a class="description__anchor" href="./extensions">the listing page.</a></p>
     </div>
-
+    <div>
+      <p>
+        <i>(Optional): To make sure that the extension's apk are signed by the same certificate as original tachiyomi.apk, open <a class="description__anchor" href="https://play.google.com/store/apps/details?id=sk.styk.martin.apkanalyzer">apkAnalyzer</a> and check the certificate MD5 of tachiyomi and then of the extension. If both have the same Certificate MD5 as... </i><code>c4313d134d6b83134103d47a6873cb0f</code> <i>(just check the first 8 characters) ...then its legit safe to use.</i>
+      </p>
+    </div>
     <script>Promise.allSettled([customElements.whenDefined("sl-button")]).then((() => { document.body.classList.add("ready") }))</script>
 </body>
 </html>
+

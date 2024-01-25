@@ -32,7 +32,7 @@
     }
 
     document.addEventListener("alpine:init", () => {
-        Alpine.store("repoUrl", "https://raw.githubusercontent.com/respectface/extensions/repo");
+        Alpine.store("repoUrl", "https://raw.githubusercontent.com/respectface/tachi-prepurge-extensions/repo");
 
         Alpine.data("extensionList", () => ({
             LoadingStatus,
